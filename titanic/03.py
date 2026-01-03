@@ -31,3 +31,18 @@ print(f'Media for Discipline: {np.round(media_discipline, 2)}')
 
 deviation_discipline = np.std(notes2, axis=0)
 print(f'Standard Deviation for discipline: {np.round(deviation_discipline, 2)}')
+
+# # calculate products
+
+prices = []
+N = 60 * 60 * 24 * 365
+for i in range(N):
+    prices.append(100 + i/100)
+
+print(prices[:5])
+
+avg = 0.0
+for p in prices:
+    avg += p/len(prices)
+
+print(avg)
